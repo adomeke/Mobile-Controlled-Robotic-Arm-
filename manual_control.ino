@@ -37,15 +37,15 @@ void loop() {
     delay(15);     // robot may become unbalanced without delay, it also controls speed though
   }
     for (pos = pos_y_i; pos <= pos_y_c; pos += 1) { 
-    servo_x.write(pos);              
+    servo_y.write(pos);              
     delay(15);     // robot may become unbalanced without delay, it also controls speed though
   }
     for (pos = pos_z_i; pos <= pos_z_c; pos += 1) { 
-    servo_x.write(pos);              
+    servo_z.write(pos);              
     delay(15);     // robot may become unbalanced without delay, it also controls speed though
   }
     for (pos = pos_clamp_i; pos <= pos_clamp_c; pos += 1) { 
-    servo_x.write(pos);              
+    servo_clamp.write(pos);              
     delay(15);     // robot may become unbalanced without delay, it also controls speed though
   }
 }
